@@ -1,0 +1,15 @@
+URxvt.font: xft:Source Code Variable:size=12
+URxvt*scrollBar: false
+
+URxvt.transparent: true
+URxvt.shading: 25
+URxvt*foreground:  White
+! URxvt*blurRadius: 1*50
+
+! Apply gaussian blur with the specified radius to the transparent background. If a single number is specified, the vertical and horizontal radii are considered to be the same. 
+! Setting one of the radii to 1 and the other to a large number creates interesting effects on some backgrounds. The maximum radius value is 128. An horizontal or vertical radius of 0 disables blur
+! Darken (0 .. 99) or lighten (101 .. 200) the transparent background.  A value of 100 means no shading
+
+
+! run this command in terminal after any changes to this file
+! xrdb ~/.Xresources
