@@ -81,23 +81,23 @@ type = internal/xkeyboard
 type = internal/date
 interval = 2
  
-date = "   %d.%m.%Y%{A}"
+date = "   %d.%m.%Y%"
 date-alt = "   %A, %d. %B"
  
-format-padding = 30
-label = "%{O-60} %date%"
-format-foreground = #ececec
-format-background = background
+format-padding = 2
+label = "%date%"
+format-underline = #fff
 label-font = 2
 
 [module/time]
 type = internal/date
 interval = 1 
  
-time = " %{A3:gsimplecal:}     %H:%M:%S"
+time = "   %H:%M:%S"
 time-alt = "%H:%M:%S"
  
 format-padding = 2
+format-underline = #fff
 label = "%time%"
 label-font = 2
 
