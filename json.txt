@@ -80,7 +80,9 @@ further changes as we see fit."
 {"p.s.": "the above text is a valid JSON format in accordance with the draft-07
 of the schema as specified @json-schema.org"}  
 
-{"link": "https://github.com/bpsundar/dotfiles/blob/master/cic_json_v0.01.json"}
+{"link": 
+"definitions": "https://github.com/bpsundar/dotfiles/blob/master/cic_afc_definitions_ver01.json",
+"data": "https://github.com/bpsundar/dotfiles/blob/master/cic_afc_data_ver01.json"}
 
 
 
