@@ -1,0 +1,92 @@
+{"title": "lets do JSON",
+"1": {
+"question" : "what is json?",
+"answer": "JSON (JavaScript Object Notation) is a lightweight data-interchange
+format. It is easy for humans to read and write. It is easy for machines to
+parse and generate."},
+
+"2": {
+"q": "what does the above sentence mean?",
+"a": "it's a language that computers use to communicate information amongst
+themselves."},
+
+"3": {
+"q": "how will I understand what they are talking?",
+"a": "the format is so easy that even a human can read and understand.
+yippeee!"},
+
+"4": {
+"q": "show me the code",
+"a": "you are right now reading english (duh!) formatted as JSON"},
+
+"5": {
+"q": "and?",
+"a": "Because it  is so simple, it is not expected that the JSON grammar will
+ever change. This gives JSON, as a foundational notation, tremendous stability.
+and believe me it makes life so simple and easy."},
+
+"6": {
+"q": "how so?",
+"a": "just look at the following example",
+"example": {
+"name": "namo",
+"job": "bdfl",
+"contact": "telepathy",
+"strengths": "execution"}
+},
+
+"7": {
+"q": "please continue",
+"a": "and it could be standardised so that every body understands as they all
+are talking in the same language",
+"parody": {
+"name": "string",
+"job": "string",
+"contact": "string",
+"strengths": "string"}
+},
+
+"8": {
+"q": "give me more",
+"a": "when all agree to talk in the same manner then it becomes a schema and you
+can parody any person living or dead using the above format.",
+"suggestion": "try pappu",
+"parody": {
+"name": "pappu",
+"job": "prince charming",
+"contact": "don't bother",
+"strengths": "null"}
+},
+
+"9": {
+"q": "is there a future for me from reading this article?",
+"a": "remember that you are required to talk to the computer at the CIC and
+share some stuff about your borrowers. and further more you are also required to
+required to required to say the same thing four times (and counting) over."},
+
+"9": {
+"q": "&%^%$@*^&",
+"a": "yes!, I agree. and that is where JSON will come to our rescue. we can all
+agree to share data in a standardised structured way so that even the dumb
+computers at all the 4plus companies can understand."},
+
+"10": {
+"q": "do you...?",
+"a": "yes, i have a version 0.1 of the schema for your perusal and we can make
+further changes as we see fit."
+}
+}
+
+{"p.s.": "the above text is a valid JSON format in accordance with the draft-07
+of the schema as specified @json-schema.org"}  
+
+{"link": "https://github.com/bpsundar/dotfiles/blob/master/cic_json_v0.01.json"}
+
+
+
+
+
+
+
+
+
