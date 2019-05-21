@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "CIC/Data/Submission/Version/0.1",
+  "title": "Common CIC Data Submission - AFC",
+  "data": {
+    "reporting_inst": {
+       "$ref": "cic_afc_definitions_ver01.json#/definitions/reporting_inst"
+    },
+    "1": {
+      "primary_aplcnt": {
+        "$ref": "cic_afc_definitions_ver01.json#/definitions/primary_aplicnt"
+      },
+      "guarantor": {
+        "$ref": "cic_afc_definitions_ver01.json#/definitions/guarantor"
+      }
+    }
+    },
+    "2": {},
+    "3": {}
+  }
