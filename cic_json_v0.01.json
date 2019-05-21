@@ -1,0 +1,304 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "CIC/Data/Submission/Version/0.1",
+  "title": "Common CIC Data Submission - AFC",
+  "Reporting_inst": {
+    "Name": "String",
+    "Branch": "String",
+    "Region": "String"
+  },
+  "data": {
+      "1":{
+      "primary_aplcnt": {
+      "name": {
+        "fname": "string",
+        "mname": "string",
+        "lname": "string",
+        "alias": "string"
+      },
+      "dob": "date",
+      "gender": "string",
+      "marital_status": "string",
+      "photo":"base64",
+      "address": {
+        "residence": {
+
+          "ownership": {
+            "type": "string",
+            "years": "number"
+          },
+          "line1": "string",
+          "line2": "string",
+          "line3": "string",
+          "village": "string",
+          "town": "string",
+          "city": "string",
+          "state": "string",
+          "pincode": "number"
+        },
+       "work":{
+           "line1": "string",
+        "line2": "string",
+        "line3": "string",
+        "village": "string",
+        "town": "string",
+        "city": "string",
+        "state": "string",
+        "pincode": "number"
+      }
+      },
+      "relattionship": {
+        "father": "string",
+        "mother": "string",
+        "spouse": "string",
+        "kids": {
+            "first": "string",
+            "second": "string"
+          }
+
+      },
+      "identification": {
+        "aadhaar": "string",
+        "pan": "string",
+        "voter_id": "string",
+        "drivers_lic": "string"
+      },
+      "contact": {
+        "mobile": "number",
+        "whatsapp": "number",
+        "landline": "number",
+        "std_code": "number",
+        "email": "string"
+      },
+      "bank_details": {
+        "bank_name": "string",
+        "branch": "string",
+        "ifsc": "string",
+        "acc_num": "number",
+        "acc_type": "string"
+      },
+      "loan_details": {
+      "UIN": "string",
+      "date_disbursed": "date",
+      "loan_amount": "number",
+      "ltv": "number",
+      "loan_tenure": "number",
+      "emi_frequency": "string",
+      "emi_amount": "number",
+      "emi_date": "number"
+    },
+      "asset_details": {
+      "vehicle_name": "string",
+      "vehicle_manuf": "string",
+      "year_manuf": "date"
+    },
+      "Curr_status": {
+      "type": "string",
+      "balance": "number",
+      "overdue": "number",
+      "dpd_current": "number",
+      "dpd_avg": "numbr",
+      "bounced_chq_instc": "number"
+    }
+      },
+      "guarantor": {
+              "name": {
+        "fname": "string",
+        "mname": "string",
+        "lname": "string",
+        "alias": "string"
+      },
+      "dob": "date",
+      "gender": "string",
+      "marital_status": "string",
+      "address": {
+        "residence": {
+
+          "ownership": {
+            "type": "string",
+            "years": "number"
+          },
+          "line1": "string",
+          "line2": "string",
+          "line3": "string",
+          "village": "string",
+          "town": "string",
+          "city": "string",
+          "state": "string",
+          "pincode": "number"
+        },
+       "work":{
+           "line1": "string",
+        "line2": "string",
+        "line3": "string",
+        "village": "string",
+        "town": "string",
+        "city": "string",
+        "state": "string",
+        "pincode": "number"
+      },
+      },
+       "identification": {
+        "aadhaar": "string",
+        "pan": "string",
+        "voter_id": "string",
+        "drivers_lic": "string"
+      },
+       "contact": {
+        "mobile": "number",
+        "whatsapp": "number",
+        "landline": "number",
+        "std_code": "number",
+        "email": "string"
+      },
+  
+}
+      },
+      "2": {
+      "primary_aplcnt": {
+      "name": {
+        "fname": "string",
+        "mname": "string",
+        "lname": "string",
+        "alias": "string"
+      },
+      "dob": "date",
+      "gender": "string",
+      "marital_status": "string",
+      "photo":"base64",
+      "address": {
+        "residence": {
+
+          "ownership": {
+            "type": "string",
+            "years": "number"
+          },
+          "line1": "string",
+          "line2": "string",
+          "line3": "string",
+          "village": "string",
+          "town": "string",
+          "city": "string",
+          "state": "string",
+          "pincode": "number"
+        },
+       "work":{
+           "line1": "string",
+        "line2": "string",
+        "line3": "string",
+        "village": "string",
+        "town": "string",
+        "city": "string",
+        "state": "string",
+        "pincode": "number"
+      }
+      },
+      "relattionship": {
+        "father": "string",
+        "mother": "string",
+        "spouse": "string",
+        "kids": {
+            "first": "string",
+            "second": "string"
+          }
+
+      },
+      "identification": {
+        "aadhaar": "string",
+        "pan": "string",
+        "voter_id": "string",
+        "drivers_lic": "string"
+      },
+      "contact": {
+        "mobile": "number",
+        "whatsapp": "number",
+        "landline": "number",
+        "std_code": "number",
+        "email": "string"
+      },
+      "bank_details": {
+        "bank_name": "string",
+        "branch": "string",
+        "ifsc": "string",
+        "acc_num": "number",
+        "acc_type": "string"
+      },
+      "loan_details": {
+      "UIN": "string",
+      "date_disbursed": "date",
+      "loan_amount": "number",
+      "ltv": "number",
+      "loan_tenure": "number",
+      "emi_frequency": "string",
+      "emi_amount": "number",
+      "emi_date": "number"
+    },
+      "asset_details": {
+      "vehicle_name": "string",
+      "vehicle_manuf": "string",
+      "year_manuf": "date"
+    },
+      "Curr_status": {
+      "type": "string",
+      "balance": "number",
+      "overdue": "number",
+      "dpd_current": "number",
+      "dpd_avg": "numbr",
+      "bounced_chq_instc": "number"
+    }
+      },
+      "guarantor": {
+              "name": {
+        "fname": "string",
+        "mname": "string",
+        "lname": "string",
+        "alias": "string"
+      },
+      "dob": "date",
+      "gender": "string",
+      "marital_status": "string",
+      "address": {
+        "residence": {
+
+          "ownership": {
+            "type": "string",
+            "years": "number"
+          },
+          "line1": "string",
+          "line2": "string",
+          "line3": "string",
+          "village": "string",
+          "town": "string",
+          "city": "string",
+          "state": "string",
+          "pincode": "number"
+        },
+       "work":{
+           "line1": "string",
+        "line2": "string",
+        "line3": "string",
+        "village": "string",
+        "town": "string",
+        "city": "string",
+        "state": "string",
+        "pincode": "number"
+      },
+      },
+       "identification": {
+        "aadhaar": "string",
+        "pan": "string",
+        "voter_id": "string",
+        "drivers_lic": "string"
+      },
+       "contact": {
+        "mobile": "number",
+        "whatsapp": "number",
+        "landline": "number",
+        "std_code": "number",
+        "email": "string"
+      },
+  
+}
+      }
+      }
+  }
