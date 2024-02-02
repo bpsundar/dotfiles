@@ -306,7 +306,7 @@ meow edit's defaults are in 'meow.el' file which is loaded by
   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)))
 #+end_src
 
-#+my-visual-fill-mode
+#+NAME: my-visual-fill-mode
 #+begin_src emacs-lisp
   ;; Enable visual line numbers globally
   (global-display-line-numbers-mode 1)
