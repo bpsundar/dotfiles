@@ -15,7 +15,7 @@
   C-c C-v C-t =org-babel-tangle=.
 ** early-init.el
 :PROPERTIES:
-:HEADER-ARGS:emacs-lisp: :tangle ~/emacs_test/init.el
+:HEADER-ARGS:emacs-lisp: :tangle ~/.emacs.d/init.el
 :END:
 
 [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Early-Init-File.html][The Early Init File]] 
@@ -23,9 +23,9 @@
 #+NAME: first-block
 #+begin_src emacs-lisp
   ;; Automatically start Emacs server if not already running
-  ;; (require 'server)
-  ;; (unless (server-running-p)
-  ;;   (server-start))
+  (require 'server)
+  (unless (server-running-p)
+     (server-start))
   (menu-bar-mode -1)
   (tool-bar-mode -1)
   (scroll-bar-mode -1)
@@ -94,7 +94,7 @@ files are stored, moving them out of your primary configuration
 directory (typically ~/.emacs.d/) into more appropriate locations.
 #+NAME: housekeeping
 #+begin_src emacs-lisp
-  ;; (use-package no-littering)
+  (use-package no-littering)
 
   ;; Optional: Additional backup settings
   (setq backup-by-copying t      ; Don't clobber symlinks
@@ -103,13 +103,13 @@ directory (typically ~/.emacs.d/) into more appropriate locations.
         kept-old-versions 2
         version-control t)       ; Use versioned backups
 
-  ;; (use-package auto-package-update
-  ;;   :config
-  ;;   (setq auto-package-update-interval 7)
-  ;;   (setq auto-package-update-prompt-before-update t)
-  ;;   (setq auto-package-update-hide-results t)
-  ;;   (setq auto-package-update-delete-old-versions t)
-  ;;   (auto-package-update-maybe))
+   (use-package auto-package-update
+     :config
+     (setq auto-package-update-interval 7)
+     (setq auto-package-update-prompt-before-update t)
+     (setq auto-package-update-hide-results t)
+     (setq auto-package-update-delete-old-versions t)
+     (auto-package-update-maybe))
 
   ;; Garbage Collection Magic Hack Tweak gc threashold
   (use-package gcmh
@@ -131,22 +131,23 @@ directory (typically ~/.emacs.d/) into more appropriate locations.
   ;;     (setq dashboard-set-file-icons t)
   ;;     )
   ;; (setq initial-buffer-choice (lambda () (get-buffer-create "*dashboard*")))
+  
   ;; use-package with package.el:
-  (use-package dashboard
-    :config
-    (dashboard-setup-startup-hook))
+   (use-package dashboard
+     :config
+     (dashboard-setup-startup-hook))
 #+end_src
 
 meow edit's defaults are in 'meow.el' file which is loaded by
 'init.el'. Goodbye Evil, [[https://esrh.me/posts/2021-12-18-switching-to-meow.html][Why meow?]]
 #+NAME: meow
 #+begin_src emacs-lisp
-  (load-file "~/emacs_test/meow.el")
+  (load-file "~/.emacs.d/meow.el")
 #+end_src
 
 #+NAME: custom keymaps
 #+begin_src emacs-lisp
-  (load-file "~/emacs_test/keybind.el")
+  (load-file "~/.emacs.d/keybind.el")
 #+end_src
 
 #+NAME: org-modern
@@ -339,7 +340,7 @@ Using the C-c prefix followed by a letter is a common convention for
 user-defined keybindings, as these sequences are generally reserved
 for users and are less likely to conflict with other bindings.
 
-#+begin_src emacs-lisp :tangle ~/emacs_test/keybind.el
+#+begin_src emacs-lisp :tangle ~/.emacs.d/keybind.el
   ;; b for buffer---------------------------------------------------------------------
   (global-set-key (kbd "C-c b k") 'kill-buffer)
   (global-set-key (kbd "C-c b l") 'list-buffers)
@@ -383,7 +384,7 @@ for users and are less likely to conflict with other bindings.
 #+end_src
 
 ** meow.el
-#+begin_src emacs-lisp :tangle "~/emacs_test/meow.el"
+#+begin_src emacs-lisp :tangle "~/.emacs.d/meow.el"
   (defun meow-setup ()
     (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
     (meow-motion-overwrite-define-key
@@ -479,7 +480,7 @@ for users and are less likely to conflict with other bindings.
 
 ** org.el
 :PROPERTIES:
-:HEADER-ARGS:emacs-lisp: :tangle ~/emacs_test/init.el
+:HEADER-ARGS:emacs-lisp: :tangle ~/.emacs.d/init.el
 :END:
 #+begin_src emacs-lisp
   (defun my/org-mode-setup ()
@@ -505,10 +506,10 @@ for users and are less likely to conflict with other bindings.
 #+end_src
 ** lsp-mode
 :PROPERTIES:
-:HEADER-ARGS:emacs-lisp: :tangle ~/emacs_test/init.el
+:HEADER-ARGS:emacs-lisp: :tangle ~/.emacs.d/init.el
 :END:
 #+NAME: lsp-mode
-#+begin_src emacs-lisp :tangle "~/emacs_test/init.el"
+#+begin_src emacs-lisp
   (use-package lsp-mode
     :commands (lsp lsp-deferred)
     :hook ((python-mode . lsp-deferred)   ; Replace `python-mode` with the mode of the language you use
